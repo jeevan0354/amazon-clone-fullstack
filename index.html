@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Clone</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+  <div class="nav-left">
+    <img src="amazon_logo.png" class="logo">
+
+    <div class="address">
+      <span class="small">Deliver to</span>
+      <span><i class="fa fa-location-dot"></i> India</span>
+    </div>
+  </div>
+
+  <div class="nav-search">
+    <select>
+      <option>All</option>
+    </select>
+    <input type="text" placeholder="Search Amazon">
+    <button><i class="fa fa-search"></i></button>
+  </div>
+
+  <div class="nav-right">
+
+    <!-- Login -->
+    <a href="login.html"
+       class="nav-box"
+       style="color:white;text-decoration:none">
+      <span class="small">Hello</span>
+      <span>Login</span>
+    </a>
+
+    <!-- Returns -->
+    <div class="nav-box">
+      <span class="small">Returns</span>
+      <span>& Orders</span>
+    </div>
+
+    <!-- Cart -->
+    <a href="cart.html"
+       class="nav-cart"
+       style="color:white;text-decoration:none">
+      <i class="fa fa-cart-shopping"></i>
+      <span id="cartCount" class="cart-count">0</span>
+      Cart
+    </a>
+
+  </div>
+
+</header>
+
+<!-- ================= SUB NAV ================= -->
+<nav class="sub-nav">
+  <span><i class="fa fa-bars"></i> All</span>
+  <span>Today's Deals</span>
+  <span>Buy Again</span>
+  <span>Customer Service</span>
+</nav>
+
+<!-- ================= BANNER ================= -->
+<section class="banner">
+  <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+</section>
+
+<!-- ================= STATIC AMAZON CARDS ================= -->
+<section class="products">
+
+  <div class="product-card">
+    <h3>Shop for your home essentials</h3>
+    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+    <p>Cleaning tools, storage & decor</p>
+  </div>
+
+  <div class="product-card">
+    <h3>Get your game on</h3>
+    <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167">
+    <p>Gaming PC, headset & controller</p>
+  </div>
+
+  <div class="product-card">
+    <h3>Top kitchen appliances</h3>
+    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31b">
+    <p>Cookers, kettles & mixers</p>
+  </div>
+
+  <div class="product-card">
+    <h3>Fashion deals</h3>
+    <img src="https://images.unsplash.com/photo-1521334884684-d80222895322">
+    <p>Clothing & footwear</p>
+  </div>
+
+</section>
+
+<!-- ================= DYNAMIC PRODUCTS FROM BACKEND ================= -->
+<section class="products" id="dynamic-products">
+  <!-- Products will be injected by script.js -->
+</section>
+
+<!-- ================= SCRIPT ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
